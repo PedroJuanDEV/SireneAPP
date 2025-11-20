@@ -9,7 +9,7 @@ const secondaryTextColor = '#666666';
 const cardBackgroundColor = '#FFFFFF';
 
 
-const profileImageSource = require('@/assets/images/profile.jpeg'); 
+const profileImageSource = require('@/assets/images/profile.jpg'); 
 
 const InfoCard: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
   <View style={styles.infoCard}>
@@ -50,7 +50,7 @@ export default function PerfilScreen() {
                         />
                     </View>
                     
-                    <Text style={styles.userName}>Pedro Juan</Text>
+                    <Text style={styles.userName}>marshall</Text>
                     <Text style={styles.userRole}>Capitão</Text>
                 </View>
 
@@ -103,13 +103,13 @@ const styles = StyleSheet.create({
         borderColor: '#E0E0E0',
         borderWidth: 2,
         marginBottom: 10,
-        overflow: 'hidden', // 🎯 CRUCIAL: Garante que a imagem seja cortada em círculo
+        overflow: 'hidden', 
     },
-    // 🎯 NOVO ESTILO: Garante que a imagem preencha e seja circular
+    
     profileImage: { 
         width: '100%',
         height: '100%',
-        borderRadius: 50, // Opcional, mas garante o formato se o container falhar
+        borderRadius: 50, 
     },
     userName: {
         fontSize: 22,
